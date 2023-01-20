@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    /* font-family: Ink Free; */
+}
+
+.navbar {
+    background-image: linear-gradient(160deg, hsla(202, 100%, 40%, 0.57) 20%, hsla(173, 46%, 60%, 0.6) 80%);
+    backdrop-filter: blur(1.5rem);
+    top: 0;
+    z-index: 1;
+}
+
+#Brand-text {
+    text-decoration: none;
+    color: hsl(42, 93%, 48%);
+    font-size: 42px;
+    border-radius: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* navbar items */
+ul>li {
+    list-style: none;
+    transition: transform 0.3s;
+}
+
+ul>li:hover {
+    transform: scale(1.14);
+}
+
+ul>li:active {
+    transform: scale(1.04);
+}
+
+ul>li>a {
+    text-decoration: none;
+}
+
+ul>li>a>strong {
+    font-size: 28px;
+    font-weight: bolder;
+    color: hsl(198, 91%, 27%);
+    transition: color 0.3s;
+}
+
+ul>li>a>strong:hover {
+    color: hsl(41, 97%, 50%);
+}
+
+#search {
+    font-size: 19px;
+    font-weight: bold;
+    color: hsl(198, 91%, 25%);
+    width: 252px;
+    height: 50px;
+    border-radius: 21px;
+    border-color: hsl(198, 91%, 28%);
+    transition: border-color 0.3s, transform 0.35s;
+    /* border-color: hsl(198, 91%, 35%); */
+}
+
+#search:hover {
+    border-color: hsl(198, 91%, 37%);
+    transform: scale(1.085);
+}
+
+.navbar-toggler {
+    color: hsl(198, 91%, 30%);
+}
+
+
+/* Main content */
+/* Homepage */
+#Home-page {
+    width: 100%;
+    height: 520px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#hp-text {
+    top: 0;
+    width: 450px;
+    height: 440px;
+}
+
+.hp-textt {
+    font-size: 58px;
+    color: hsl(198, 95%, 34%);
+}
+
+.hp-texttt {
+    font-size: 18px;
+    color: hsl(198, 95%, 34%);
+
+}
+
+#Shop-now-btn {
+    width: 165px;
+    height: 70px;
+    border-radius: 11px;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bolder;
+    background-color: hsl(198, 95%, 34%);
+    transition: background-color 0.3s ,transform 0.25s;
+}
+
+#Shop-now-btn:hover {
+    background-color: hsl(41, 97%, 48%);
+}
+
+#Shop-now-btn:active{
+    transform: scale(0.9);
+}
+
+/*Categories*/
+.cat {
+    width: 421px;
+    height: 280px;
+    /* border: 1px solid rgb(44, 43, 43); */
+    margin-bottom: 10px;
+}
+
+.cat-img {
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.cat-text {
+    top: 0;
+}
+
+/* Clothes */
+#Clothes-cat {
+    font-weight: bolder;
+    color: hsl(41, 96%, 63%);
+}
+
+#check-now-clothes {
+    width: 154px;
+    height: 58px;
+    border-radius: 11px;
+    text-decoration: none;
+    color: hsl(0, 1%, 22%);
+    font-size: 22px;
+    background-color: hsl(41, 94%, 70%);
+    transition: background-color 0.3s/*, transform 0.3s*/;
+}
+
+#check-now-clothes:hover {
+    background-color: hsl(190, 18%, 95%);
+    color: hsl(0, 1%, 22%);
+}   
+
+/* #check-now-clothes:active{
+    transform: scale(0.9);
+} */
+
+/* Hats */
+#Hats-cat {
+    font-weight: bolder;
+    color: hsl(231, 63%, 65%);
+}
+
+#check-now-hats {
+    width: 154px;
+    height: 58px;
+    border-radius: 11px;
+    text-decoration: none;
+    color: hsl(0, 1%, 14%);
+    font-size: 22px;
+    background-color: hsl(231, 61%, 72%);
+    transition: background-color 0.3s;
+}
+
+#check-now-hats:hover {
+    background-color: hsl(223, 23%, 95%);
+}
+
+/* Hoodies */
+#Hoodies-cat {
+    font-weight: bolder;
+}
+
+#check-now-hoodies {
+    width: 154px;
+    height: 58px;
+    border-radius: 11px;
+    text-decoration: none;
+    color: hsl(0, 1%, 18%);
+    font-size: 22px;
+    background-color: hsl(0, 0%, 63%);
+    transition: background-color 0.3s;
+}
+
+#check-now-hoodies:hover {
+    background-color: hsl(0, 0%, 81%);
+}
+
+/* Watches */
+#Watches-cat {
+    font-weight: bolder;
+    color: hsl(21, 72%, 46%);
+}
+
+#check-now-watches {
+    width: 154px;
+    height: 58px;
+    border-radius: 11px;
+    text-decoration: none;
+    color: hsl(0, 1%, 10%);
+    font-size: 22px;
+    background-color: hsl(21, 70%, 58%);
+    transition: background-color 0.3s;
+}
+
+#check-now-watches:hover {
+    background-color: hsl(21, 70%, 87%);
+}
+
+/* Glasses */
+#Glasses-cat {
+    font-weight: bolder;
+    color: hsl(193, 82%, 45%);
+}
+
+#check-now-glasses {
+    width: 154px;
+    height: 58px;
+    border-radius: 11px;
+    text-decoration: none;
+    color: hsl(0, 1%, 18%);
+    font-size: 22px;
+    background-color: hsl(0, 0%, 84%);
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+#check-now-glasses:hover {
+    background-color: hsl(0, 0%, 93%);
+}
+
+/* Shoes */
+#Shoes-cat {
+    font-weight: bolder;
+}
+
+#check-now-shoes {
+    width: 154px;
+    height: 58px;
+    border-radius: 11px;
+    text-decoration: none;
+    color: hsl(0, 1%, 10%);
+    font-size: 22px;
+    background-color: hsl(21, 70%, 62%);
+    transition: background-color 0.3s;
+}
+
+#check-now-shoes:hover {
+    background-color: hsl(21, 70%, 87%);
+}
+
+/*Shop now action performeded section*/
+
+/* Clothes */
+.Clothes-cont-hd,
+.Hats-cont-hd,
+.Hoodies-cont-hd,
+.Watches-cont-hd,
+.Glasses-cont-hd,
+.Shoes-cont-hd {
+    padding-top: 8px;
+    height: 105px;
+    background-image: linear-gradient(160deg, hsl(202, 100%, 51%) 0%, hsl(173, 46%, 71%) 100%);
+    box-shadow: 10px 10px 5px hsl(195, 53%, 79%);
+}
+
+.Clothes-cont-hd>h1,
+.Hats-cont-hd>h1,
+.Hoodies-cont-hd>h1,
+.Watches-cont-hd>h1,
+.Glasses-cont-hd>h1,
+.Shoes-cont-hd>h1 {
+    color: hsl(198, 91%, 23%);
+    font-size: 51px;
+    font-weight: bolder;
+    letter-spacing: 0.4em;
+}
+
+.card {
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.35s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card:active{
+    transform: scale(0.95);
+}
+
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+}
+
+.card-tittle {
+    color: hsl(198, 95%, 28%);
+    font-weight: bolder;
+    font-size: 2.4em;
+}
+
+.card-disc {
+    color: hsl(198, 95%, 30%);
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.cards-buy-btn {
+    height: 50px;
+    background-color: hsl(198, 95%, 34%);
+    transition: background-color 0.3s /*, transform 0.35s*/;
+}
+
+.cards-buy-btn:hover {
+    background-color: hsl(198, 95%, 41%);
+}
+
+/* .cards-buy-btn:active {
+    background-color: hsl(198, 95%, 34%);
+} */
+
+/* .cards-buy-btn:active {
+    transform: scale(0.95);
+} */
+
+.cards-buy-btn>a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.See-all {
+    width: 168px;
+    height: 65px;
+    text-decoration: none;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: hsl(198, 95%, 34%);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.See-all:hover {
+    background-color: hsl(41, 97%, 48%);
+}
+
+.See-all:active{
+    transform: scale(0.9);
+}
+
+/* Footer */
+/* Social media section */
+.Social-media {
+    width: 100%;
+    background-color: hsl(217, 45%, 86%);
+}
+
+.Social-media-1>h4 {
+    color: hsl(198, 95%, 25%);
+    font-weight: bold;
+}
+
+.Social-media-1>div>a>i {
+    font-size: 22px;
+    color: hsl(198, 95%, 29%);
+    transition: color 0.2s, transform 0.25s;
+}
+
+.Social-media-1>div>a>i:hover {
+    color: hsl(42, 93%, 48%);
+    transform: scale(1.18);
+}
+
+.Social-media-1>div>a>i:active {
+    /* color: hsl(42, 93%, 68%); */
+    transform: scale(1.06);
+}
+
+/* Brand & others */
+.Footer {
+    width: 100%;
+    background-color: hsl(217, 45%, 86%);
+}
+
+/* Brand */
+.f-Brand {
+    /* border: 2px solid #000; */
+    width: 310px;
+    height: 300px;
+}
+
+.f-Brand-text {
+    text-decoration: none;
+    color: hsl(42, 93%, 48%);
+    font-size: 43px;
+}
+
+.f-Brand-Desc {
+    font-weight: bolder;
+    color: hsl(198, 95%, 34%);
+}
+
+/* Others */
+.f-Products,
+.f-Links,
+.f-Contact {
+    /* border: 2px solid #000; */
+    width: 250px;
+    height: 300px;
+}
+
+.f-Products>h4,
+.f-Links>h4,
+.f-Contact>h4 {
+    font-weight: bold;
+    color: hsl(198, 95%, 25%);
+}
+
+.f-Products>.link,
+.f-Links>.link,
+.f-Contact>h5 {
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: hsl(198, 95%, 29%);
+    transition: color 0.25s, transform 0.2s;
+    width: 4.3em;
+}
+
+.f-Contact>h5 {
+    width: 100%;
+}
+
+.f-Products>.link:hover,
+.f-Links>.link:hover {
+    /* color: hsl(198, 95%, 25%); */
+    color: hsl(42, 93%, 48%);
+    transform: scale(1.15);
+}
+
+.f-Products>.link:active,
+.f-Links>.link:active {
+    transform: scale(1.05);
+}
+
+
+

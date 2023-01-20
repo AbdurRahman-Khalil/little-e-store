@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Little-E-Shop.css" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- for icons -->
+  <script src="https://kit.fontawesome.com/5bb0e62ca5.js" crossorigin="anonymous"></script>
+  <title>Just doin' fun</title>
+</head>
+
+<body style="background-color: hsl(217, 45%, 93%);">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg pt-1 pb-1 rounded-bottom position-sticky">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-1" id="Brand-text" href="#">
+        <strong><span style="color: hsl(202, 96%, 30%)">L</span>ittle
+          <span style="color: hsl(202, 96%, 30%)">E</span>-<span
+            style="color: hsl(202, 96%, 30%)">S</span>hop</strong></a>
+      <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+        aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav text-center ms-auto mb-1"> <!-- mb-lg-0 -->
+          <form class="text-center">
+            <input class="form-control border-2 mt-1 me-2" id="search" type="search" placeholder="Search here..."
+              aria-label="Search" />
+          </form>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home"><strong>Home</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-1" href="#Clothing"><strong>Clothing</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-1" href="#Hoodies"><strong>Hoodies</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-1" href="#Categories"><strong>Category</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-1" href="#About"><strong>About</strong></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Main content -->
+  <div class="container-fluid d-flex flex-column mt-1">
+    <!-- Homepage -->
+    <div class="container-fluid d-flex justify-content-center mb-2 position-relative" id="Home">
+      <img src="./images/hp-4.jpg" class="img-fluid" id="Home-page" alt="Hompage Image" />
+      <div class="d-flex flex-column justify-content-center position-absolute mt-4 pt-3" id="hp-text">
+        <h1 class="hp-textt ms-1">Welcome to</h1>
+        <h1 class="hp-textt ms-1"><strong>Little E-Shop</strong></h1>
+        <p class="mt-1 mx-1 px-1 hp-texttt fw-bold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.Et fugit
+          expedita rem iusto possimus delectus exercitatio Lorem ipsum sit
+          amet consectetur elit.
+        </p>
+        <a href="#Categories" class="border-0 mt-2 mx-2 px-4 pe-0 pt-3 text-light" id="Shop-now-btn">Shop now</a>
+      </div>
+    </div>
+
+    <!-- Categories -->
+
+    <div class="container-fluid d-flex justify-content-center flex-wrap mt-2" id="Categories">
+      <div class="cat cat-1 m-1 flex-grow-1 position-relative">
+        <img src="./Clothing/Clothing-cat.png" class="cat-img img-fluid" style="height: 280px" alt="Clothes" />
+        <div class="cat-text position-absolute px-1">
+          <h1 class="cat-tittle display-2 mx-4 mt-4 px-1" id="Clothes-cat">Clothes</h1>
+          <h5 class="cat-disc mx-3 px-3 mb-3" id="Clothes-cat">
+            <span class="text-dark">World's</span> most famous<br /><span class="text-dark">Clothes!</span>
+            check it out now
+          </h5>
+          <br>
+          &nbsp;&nbsp;<a href="#Clothing" class="border-0 mx-4 p-3 px-4 fw-bolder" id="check-now-clothes">Check now</a>
+        </div>
+      </div>
+
+      <div class="cat cat-2 m-1 flex-grow-1 position-relative">
+        <img src="./Hates/Hats-cat.webp" class="cat-img img-fluid" style="height: 280px" alt="Hats" />
+        <div class="cat-text position-absolute">
+          <h1 class="cat-tittle display-2 mx-5 mt-4" id="Hats-cat">Hats</h1>
+          <h5 class="cat-disc mx-5 px-1 mb-3" id="Hats-cat">
+            <span class="text-light">World's</span> most famous<br /><span class="text-light">Hats!</span>
+            check it out now
+          </h5>
+          <br>
+          &nbsp;<a href="#Hats" class="border-0 mx-5 p-3 px-4 fw-bolder" id="check-now-hats">Check now</a>
+        </div>
+      </div>
+
+      <div class="cat cat-3 m-1 flex-grow-1 position-relative">
+        <img src="./Hoodies/Hoodies-cat.jpg" class="cat-img img-fluid" style="height: 280px" alt="Hoodies" />
+        <div class="cat-text position-absolute px-3">
+          <h1 class="cat-tittle display-2 mx-4 mt-4 text-light" id="Hoodies-cat"><span class="text-dark"
+              style="font-size: 70px">H</span>oodies</h1>
+          <h5 class="cat-disc mx-3 px-3 mb-3 text-light" id="Hoodies-cat">
+            <span class="text-dark">World's</span> most famous<br /><span class="text-dark">Hoodies!</span>
+            check it out now
+          </h5>
+          <br>
+          &nbsp;&nbsp;<a href="#Hoodies" class="border-0 mx-4 p-3 px-4 fw-bolder" id="check-now-hoodies">Check now</a>
+        </div>
+      </div>
+
+      <div class="cat cat-4 m-1 flex-grow-1 position-relative">
+        <img src="./Watches/Watches-cat-1.jpg" class="cat-img img-fluid" style="height: 280px" alt="Watches" />
+        <div class="cat-text position-absolute px-3">
+          <h1 class="cat-tittle display-2 mx-4 mt-4 pt-1" id="Watches-cat"><span class="text-light">W</span>atches</h1>
+          <h5 class="cat-disc mx-3 px-3 mb-3 text-light" style="font-weight: bolder;">
+            World's most famous<br />Watches! check it out now
+          </h5>
+          <br>
+          &nbsp;&nbsp;<a href="#Watches" class="border-0 mx-4 p-3 px-4 fw-bolder" id="check-now-watches">Check now</a>
+        </div>
+      </div>
+
+      <div class="cat cat-5 m-1 flex-grow-1 position-relative">
+        <img src="./Glasses/Glasses-cat.jpg" class="cat-img img-fluid" style="height: 280px" alt="Glasses" />
+        <div class="cat-text position-absolute">
+          <h1 class="cat-tittle display-2 mx-5 mt-4 text-secondary" id="Glasses-cat">Glasses</h1>
+          <h5 class="cat-disc mx-5 px-2 mb-3 text-dark" id="Glasses-cat">
+            <span class="text-secondary">World's</span> most famous<br /><span class="text-dark">Glasses!</span>
+            check it out now
+          </h5>
+          <br>
+          &nbsp;&nbsp;<a href="#Glasses" class="border-0 mx-5 p-3 px-4 fw-bolder" id="check-now-glasses">Check now</a>
+        </div>
+      </div>
+
+      <div class="cat cat-6 m-1 flex-grow-1 position-relative">
+        <img src="./Shoes/Shoes-cat.jpg" class="cat-img img-fluid" style="height: 280px" alt="Shoes" />
+        <div class="cat-text position-absolute">
+          <h1 class="cat-tittle display-2 mx-5 mt-4 text-light" id="Shoes-cat">Shoes</h1>
+          <h5 class="cat-disc mx-4 px-4 mb-3 text-dark" id="Shoes-cat">
+            <span class="text-light">World's</span> most famous<br /><span class="text-light">Shoes!</span>
+            check it out now</h5>
+          <br>
+            <a href="#Shoes" class="border-0 mx-5 p-3 px-4 fw-bolder" id="check-now-shoes">Check now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopping section -->
+    <div class="container-fluid mt-4 mb-2" id="Shop-now">
+      <!-- Clothes -->
+      <div class="container rounded-3 mt-1 mb-3 d-flex justify-content-center align-items-center Clothes-cont-hd"
+        id="Clothing">
+        <h1>Clothes</h1>
+      </div>
+      <!-- Clothes container -->
+      <div class="container-fluid mt-2 mb-3 d-flex justify-content-center align-items-center flex-wrap">
+        <!-- 1st card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Clothing/Clothes-1.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Clothes.1</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 2nd card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Clothing/Clothes-2.webp" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Clothes.2</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 3rd card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Clothing/Clothes-3.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Clothes.3</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 4th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Clothing/Clothes-4.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Clothes.4</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 5th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Clothing/Clothes-1.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Clothes.5</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 6th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Clothing/Clothes-2.webp" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Clothes.6</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 7th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Clothing/Clothes-3.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Clothes.7</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 8th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Clothing/Clothes-4.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Clothes.8</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+      </div>
+      <a class="See-all text-light d-flex justify-content-center align-items-center ms-auto me-auto" href="">See all</a>
+
+      <!-- Hats -->
+      <div class="container rounded-3 mt-5 mb-3 d-flex justify-content-center align-items-center Hats-cont-hd"
+        id="Hats">
+        <h1>Hats</h1>
+      </div>
+      <!-- Hats container -->
+      <div class="container-fluid mt-2 mb-3 d-flex justify-content-center align-items-center flex-wrap">
+        <!-- 1st card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hates/Hat-1.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hat.1</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 2nd card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hates/Hat-2.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hat.2</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 3rd card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hates/Hat-3.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hat.3</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 4th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hates/Hat-4.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hat.4</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 5th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hates/Hat-5.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hat.5</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 6th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hates/Hat-6.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hat.6</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 7th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hates/Hat-7.png" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hat.7</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 8th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hates/Hat-8.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hat.8</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+      </div>
+      <a class="See-all text-light d-flex justify-content-center align-items-center ms-auto me-auto" href="">See all</a>
+
+      <!-- Hoodies -->
+      <div class="container rounded-3 mt-5 mb-3 d-flex justify-content-center align-items-center Hoodies-cont-hd"
+        id="Hoodies">
+        <h1>Hoodies</h1>
+      </div>
+      <!-- Hoodies-container -->
+      <div class="container-fluid mt-2 mb-3 d-flex justify-content-center align-items-center flex-wrap">
+        <!-- 1st card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hoodies/Hoodies-1.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hoodies.1</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 2nd card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hoodies/Hoodies-2.jpeg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hoodies.2</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 3rd card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hoodies/Hoodies-3.webp" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hoodies.3</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 4th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hoodies/Hoodies-4.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hoodies.4</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 5th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hoodies/Hoodies-5.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hoodies.5</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 6th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hoodies/Hoodies-6.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hoodies.6</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 7th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hoodies/Hoodies-7.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hoodies.7</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 8th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Hoodies/Hoodies-8.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Hoodies.8</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+      </div>
+      <a class="See-all text-light d-flex justify-content-center align-items-center ms-auto me-auto" href="">See all</a>
+
+      <!-- Watches -->
+      <div class="container rounded-3 mt-5 mb-3 d-flex justify-content-center align-items-center Watches-cont-hd"
+        id="Watches">
+        <h1>Watches</h1>
+      </div>
+      <!-- Watches container -->
+      <div class="container-fluid mt-2 mb-3 d-flex justify-content-center align-items-center flex-wrap">
+        <!-- 1st card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Watches/Watch-1.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Watch.1</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 2nd card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Watches/Watch-2.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Watch.2</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 3rd card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Watches/Watch-3.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Watch.3</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 4th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Watches/Watch-4.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Watch.4</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 5th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Watches/Watch-5.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Watch.5</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 6th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Watches/Watch-6.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Watch.6</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 7th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Watches/Watch-7.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Watch.7</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 8th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Watches/Watch-8.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Watch.8</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+      </div>
+      <a class="See-all text-light d-flex justify-content-center align-items-center ms-auto me-auto" href="">See all</a>
+
+
+      <!-- Glasses -->
+      <div class="container rounded-3 mt-5 mb-3 d-flex justify-content-center align-items-center Glasses-cont-hd"
+        id="Glasses">
+        <h1>Glasses</h1>
+      </div>
+      <!-- Glasses container -->
+      <div class="container-fluid mt-2 mb-3 d-flex justify-content-center align-items-center flex-wrap">
+        <!-- 1st card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Glasses/Glass-1.jpeg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Glass.1</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 2nd card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Glasses/Glass-2.jpeg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Glass.2</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 3rd card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Glasses/Glass-3.jpeg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Glass.3</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 4th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Glasses/Glass-4.jpeg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Glass.4</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 5th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Glasses/Glass-5.jpeg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Glass.5</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 6th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Glasses/Glass-6.jpeg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Glass.6</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 7th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Glasses/Glass-7.jpeg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Glass.7</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 8th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Glasses/Glass-8.jpeg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Glass.8</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+      </div>
+      <a class="See-all text-light d-flex justify-content-center align-items-center ms-auto me-auto" href="">See all</a>
+
+      <!-- Shoes-->
+      <div class="container rounded-3 mt-5 mb-3 d-flex justify-content-center align-items-center Shoes-cont-hd"
+        id="Shoes">
+        <h1>Shoes</h1>
+      </div>
+      <!-- Shoes container -->
+      <div class="container-fluid mt-2 mb-3 d-flex justify-content-center align-items-center flex-wrap">
+        <!-- 1st card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Shoes/Shoes-1.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Shoes.1</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 2nd card -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Shoes/Shoes-2.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Shoes.2</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 3rd card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Shoes/Shoes-3.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Shoes.3</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 4th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Shoes/Shoes-4.jpg" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Shoes.4</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 5th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Shoes/Shoes-5.webp" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Shoes.5</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 6th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Shoes/Shoes-6.webp" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Shoes.6</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 7th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Shoes/Shoes-7.webp" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Shoes.7</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+        <!-- 8th card  -->
+        <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+          <img src="./Shoes/Shoes-8.webp" class="card-img img-fluid" alt="Card Image">
+          <hr class="text-primary">
+          <h1 class="card-tittle text-center">Shoes.8</h1>
+          <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+          <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+          </button>
+        </div>
+      </div>
+      <a class="See-all text-light d-flex justify-content-center align-items-center ms-auto me-auto" href="">See all</a>
+
+    </div>
+
+    <!-- Popular Ones  -->
+    <div class="container rounded-3 mt-5 mb-3 d-flex justify-content-center align-items-center Shoes-cont-hd"
+      id="Popular-ones">
+      <h1>Popular Ones</h1>
+    </div>
+    <!-- Popular Ones container -->
+    <div class="container-fluid mt-2 mb-5 d-flex justify-content-center align-items-center flex-wrap">
+      <!-- 1st card -->
+      <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+        <img src="./Popular_Ones/Pop-1.jpg" class="card-img img-fluid" alt="Card Image">
+        <hr class="text-primary">
+        <h1 class="card-tittle text-center">Popular.1</h1>
+        <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+        <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+        </button>
+      </div>
+      <!-- 2nd card -->
+      <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+        <img src="./Popular_Ones/Pop-2.jpeg" class="card-img img-fluid" alt="Card Image">
+        <hr class="text-primary">
+        <h1 class="card-tittle text-center">Popular.2</h1>
+        <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+        <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+        </button>
+      </div>
+      <!-- 3rd card  -->
+      <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+        <img src="./Popular_Ones/Pop-3.jpg" class="card-img img-fluid" alt="Card Image">
+        <hr class="text-primary">
+        <h1 class="card-tittle text-center">Popular.3</h1>
+        <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+        <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+        </button>
+      </div>
+      <!-- 4th card  -->
+      <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+        <img src="./Popular_Ones/Pop-4.jpg" class="card-img img-fluid" alt="Card Image">
+        <hr class="text-primary">
+        <h1 class="card-tittle text-center">Popular.4</h1>
+        <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+        <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+        </button>
+      </div>
+      <!-- 5th card  -->
+      <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+        <img src="./Popular_Ones/Pop-5.webp" class="card-img img-fluid" alt="Card Image">
+        <hr class="text-primary">
+        <h1 class="card-tittle text-center">Popular.5</h1>
+        <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+        <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+        </button>
+      </div>
+      <!-- 6th card  -->
+      <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+        <img src="./Popular_Ones/Pop-6.jpeg" class="card-img img-fluid" alt="Card Image">
+        <hr class="text-primary">
+        <h1 class="card-tittle text-center">Popular.6</h1>
+        <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+        <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+        </button>
+      </div>
+      <!-- 7th card  -->
+      <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+        <img src="./Popular_Ones/Pop-7.jpg" class="card-img img-fluid" alt="Card Image">
+        <hr class="text-primary">
+        <h1 class="card-tittle text-center">Popular.7</h1>
+        <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+        <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+        </button>
+      </div>
+      <!-- 8th card  -->
+      <div class="card m-2 p-2 border-primary rounded-3" style="background-color: hsl(217, 45%, 91%);">
+        <img src="./Popular_Ones/Pop-8.webp" class="card-img img-fluid" alt="Card Image">
+        <hr class="text-primary">
+        <h1 class="card-tittle text-center">Popular.8</h1>
+        <h5 class="card-disc ms-1 me-1 text-center">RS500</h5>
+        <button class="cards-buy-btn rounded-3 border-0"><a href="" class="text-warning text-center">Buy now</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Social media section -->
+    <footer class="Social-media container-fluid mt-2 rounded-3 pt-4 pb-3">
+      <div class="Social-media-1 container px-3 d-flex justify-content-between flex-wrap">
+        <h4 class="mx-3">Get connected with us on social networks:</h4>
+        <div class="me-2 mt-1">
+          <a href="https://www.Facebook.com" target="_blank" class="m-3"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" target="_blank" class="m-3"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank" class="m-3"><i class="fa-brands fa-google"></i></a>
+          <a href="#" target="_blank" class="m-3"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" target="_blank" class="m-3"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" target="_blank" class="m-3"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Brand & others -->
+    <footer class="Footer container-fluid mt-1 rounded-3 d-flex justify-content-center flex-wrap">
+      <!-- Brand -->
+      <div class="f-Brand mx-2 me-2 p-3 d-flex flex-column" id="About">
+        <div class="mt-2 me-4">
+          <a class="f-Brand-text" href="#">
+            <strong><span style="color: hsl(202, 96%, 30%)">L</span>ittle
+              <span style="color: hsl(202, 96%, 30%)">E</span>-<span
+                style="color: hsl(202, 96%, 30%)">S</span>hop</strong></a>
+        </div>
+        <div class="px-1 me-4">
+          <h6 class="f-Brand-Desc mt-2">Lorem, ipsum dolor sit amet t consectetur adipisicing elit. Voluptatibus
+            consectetur exe. ipsum autem nobis eius. At voluptas fugiat eaque atque, dolores deleniti animi ut
+            accusantium distinctio quo ip autem nobis placeat, At vo fu.</h6>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="f-Products mx-2 me-2 pt-5 d-flex flex-column">
+        <h4 class="mb-3">PRODUCTS</h3>
+
+        <a href="#Clothing" class="link">Clothing</a>
+
+        <a href="#Hats" class="link">Hats</a>
+
+        <a href="#hoodies" class="link">Hoodies</a>
+
+        <a href="#Watches" class="link">Watches</a>
+
+        <a href="#Glasses" class="link">Glasses</a>
+
+      </div>
+
+      <!-- Useful links -->
+      <div class="f-Links mx-2 me-2 pt-5 d-flex flex-column">
+        <h4 class="mb-3">USEFUL LINKS</h4>
+
+        <a href="" class="link">Pricing</a>
+
+        <a href="" class="link">Settings</a>
+
+        <a href="" class="link">Orders</a>
+
+        <a href="" class="link">Services</a>
+
+        <a href="" class="link">Help</a>
+
+      </div>
+
+      <!-- Contact -->
+      <div class="f-Contact mx-2 me-2 pt-5">
+        <h4 class="mb-3">CONTACT</h4>
+        <h5 class="mb-3"><i class="fa-solid fa-house-chimney"></i>&nbsp; New York, NY 1012</h5>
+        <h5 class="mb-3"><i class="fa-solid fa-envelope"></i>&nbsp; E-Shop@gmail.com</h5>
+        <h5 class="mb-3"><i class="fa-solid fa-phone"></i>&nbsp; + 01 234 567 88</h5>
+        <h5 class="mb-2"><i class="fa-solid fa-mobile-screen"></i>&nbsp; + 01 234 567 89</h5>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
